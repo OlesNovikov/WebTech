@@ -1,0 +1,42 @@
+.main_container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main_container h1 {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    color: black;
+}
+.all_articles {
+    box-shadow: 0 3px 15px rgba(103,122,141,0.17);
+    background: #fff;
+    width: 30%;
+    text-align: justify;
+    margin: 8px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all_articles:hover {
+    box-shadow: 0 3px 15px rgba(103,122,141,1);
+}
+#Lido_description p, #Vasilki_description p, #Paparats_kvetka_description p {
+    color: black;
+}
+#Vasilki_image, #Lido_image, #Paparats_kvetka_image {
+    padding: 20px 0px 20px 0px;
+    width: 90%;
+}
+#Vasilki_description, #Lido_description, #Paparats_kvetka_description {
+    width: 90%;
+    padding: 0px 0px 20px 0px;
+}
+.link_to_source {
+    padding-bottom: 10px;
+}
+.link_to_source:hover {
+    color: #f0bc00;
+}
