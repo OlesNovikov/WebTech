@@ -23,7 +23,9 @@
             </div>
             <div class="logo_navigation_container">
                 <div>
-                    <a href="index.php"><img id="site_logo" src="img/Minsk_logo.jpg" alt="logo"></a>
+                    <a href="index.php">
+                        <img id="site_logo" src="img/Minsk_logo.jpg" alt="logo">
+                    </a>
                 </div>
                 <nav class="main_navigation">
                     <ul class="navigation_menu">
