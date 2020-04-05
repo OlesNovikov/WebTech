@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang = "be">
+<html lang="be">
     <head>
-        <meta charset = "utf-8">
-        <meta name = "description" content = "Minsk guide">
-        <meta name = "keywords" content = "Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
+        <meta charset="utf-8">
+        <meta name="description" content="Minsk guide">
+        <meta name="keywords" content="Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
                                            Минск, отели, еда, музеи, достопримечательности, гайд, турист, посетить, путешествие,
                                            Мінск, гателі, ежа, музеі, славутасці, гайд, турыст, наведаць, падарожжа">
-        <meta name = "author" content = "Oles Novikov">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=5.0">
+        <meta name="author" content="Oles Novikov">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
         <title>Мінск - музеі</title>
-        <link rel = "stylesheet" href = "css/header.css">
-        <link rel = "stylesheet" href = "css/museums.css">
-        <link rel = "stylesheet" href = "css/footer.css">
-        <link rel = "shortcut icon" href = "img/favicon.ico" type = "image/x-icon">
-        <link href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/museums.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <header class = "header_container">
-            <div class = "top_panel">
-                <div class = "top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
+        <header class="header_container">
+            <div class="top_panel">
+                <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
             </div>
-            <div class = "logo_navigation_container">
+            <div class="logo_navigation_container">
                 <div>
-                    <a href = "index.php"><img id = "site_logo" src = "img/Minsk_logo.jpg" alt = "logo"></a>
+                    <a href="index.php"><img id="site_logo" src="img/Minsk_logo.jpg" alt="logo"></a>
                 </div>
-                <nav class = "main_navigation">
-                    <ul class = "navigation_menu">
-                        <li><a href = "index.php">Дамашняя</a></li>
-                        <li><a href = "SIGHTS.php">Славутасці</a></li>
-                        <li><a href = "MUSEUMS.php">Музеі</a></li>
-                        <li><a href = "FOOD.php">Кухня</a></li>
-                        <li><a href = "HOTELS.php">Жыллё</a></li>
+                <nav class="main_navigation">
+                    <ul class="navigation_menu">
+                        <li><a href="index.php">Дамашняя</a></li>
+                        <li><a href="SIGHTS.php">Славутасці</a></li>
+                        <li><a href="MUSEUMS.php">Музеі</a></li>
+                        <li><a href="FOOD.php">Кухня</a></li>
+                        <li><a href="HOTELS.php">Жыллё</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class = "main_container">
+        <main class="main_container">
 
-            <article class = "all_articles">
-                <img id = "country_image" src = "img/mini_country.jpg">
-                <div id = "country_description">
+            <article class="all_articles">
+                <img id="country_image" src="img/mini_country.jpg">
+                <div id="country_description">
                     <h1>Музей "Краіна міні"</h1>
                     <p>❶ Экспазіцыя з 22 ключавых славутасцяў Беларусі, да якіх вы можаце адправіцца прама з музея;</p>
                     <p>❷ Сувенірная крама, з самай вялікай падборкай сувеніраў і падарункаў з Беларусі ад больш чым 115 беларускіх майстроў;</p>
@@ -53,12 +53,12 @@
                     <p>❽ Зона адпачынку з кавы, вадой і снэкаў;</p>
                     <p>❾ У кожны квіток ўваходзіць фотаздымка і аўдыягід; Музей «Краіна міні» - ідэальнае месца для знаёмства з Беларуссю!</p>
                 </div>
-                <a class = "link_to_source" href = "https://belarusmini.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="https://belarusmini.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                <img id = "historical_image" src = "img/Minsk_museum.jpg">
-                <div id = "historical_description">
+            <article class="all_articles">
+                <img id="historical_image" src="img/Minsk_museum.jpg">
+                <div id="historical_description">
                     <h1>Музей гісторыі горада Мінска</h1>
                     <p>Музей гісторыі горада Мінска адкрыўся 8 траўня 2010 гады. Аснову фондаў музея складаюць
                     калекцыі археалагічных раскопак Мінска XI - XIX стст., Прадметаў гарадскога побыту,
@@ -73,12 +73,12 @@
                     «Лошыцкая сядзіба» і прысядзібны флігель ў Лошыцкім сядзібна-паркавым комплексе,
                     Экспазіцыя «карэтны», Археалагічны музей, экспазіцыя «Мінская конка».</p>
                 </div>
-                <a class = "link_to_source" href = "http://minskmuseum.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="http://minskmuseum.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                <img id = "Las_Legas_image" src = "img/Las_Legas.jpg">
-                <div id = "Las_Legas_description">
+            <article class="all_articles">
+                <img id="Las_Legas_image" src="img/Las_Legas.jpg">
+                <div id="Las_Legas_description">
                     <h1>Музей Las Legas</h1>
                     <p>Першы і адзіны музей Лего ў Беларусі. Найбуйнейшая прыватная калекцыя набораў Лега:
                     ад рэтра да сучасных. Шмат эксклюзіўных і рэдкіх асобнікаў у вялікай зале 450 квадратных
@@ -95,12 +95,12 @@
                     відэа-гульні вытворчасці Lego і вялікая гульнявая зона, дзе можна з прадстаўленых
                     дэталяў Lego пазаймацца творчасцю</p>
                 </div>
-                <a class = "link_to_source" href = "https://las-legas.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="https://las-legas.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                <img id = "art_image" src = "img/national_art_museum.jpg">
-                <div id = "art_description">
+            <article class="all_articles">
+                <img id="art_image" src="img/national_art_museum.jpg">
+                <div id="art_description">
                     <h1>Нацыянальны мастацкі музей Рэспублікі Беларусь</h1>
                     <p>найбуйнейшы музей мастацкага профілю ў Рэспубліцы Беларусь, Дзяржаўная карцінная
                     галерэя з 1939 да 1957, Дзяржаўны мастацкі музей з 1957 па 1993.
@@ -110,24 +110,24 @@
                     музейныя зборы: збор нацыянальнага мастацтва і збор помнікаў мастацтва краін і народаў
                     свету.</p>
                 </div>
-                <a class = "link_to_source" href = "https://www.artmuseum.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="https://www.artmuseum.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                <img id = "contemporary_image" src = "img/contemporary_art_museum.jpg">
-                <div id = "contemporary_description">
+            <article class="all_articles">
+                <img id="contemporary_image" src="img/contemporary_art_museum.jpg">
+                <div id="contemporary_description">
                     <h1>Нацыянальны цэнтр сучасных мастацтваў</h1>
                     <p>У пачатку лістапада 2015 года Музей сучаснага выяўленчага мастацтва увайшоў у склад
                     Нацыянальнага цэнтра сучаснага мастацтва. Задачай цэнтра з'яўляецца падтрымка і развіццё
                     актуальных напрамкаў сучаснага мастацтва. З дапамогай цэнтра задумана аб'яднаць маладых
                     і якія адбыліся мастакоў, якія займаюцца сучасным мастацтвам.</p>
                 </div>
-                <a class = "link_to_source" href = "http://ncsm.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="http://ncsm.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                <img id = "money_image" src = "img/money_museum.jpg">
-                <div id = "money_description">
+            <article class="all_articles">
+                <img id="money_image" src="img/money_museum.jpg">
+                <div id="money_description">
                     <h1>Музей грошаў Groshi</h1>
                     <p>Музей грошай Groshi - новы праект у Рэспубліцы Беларусь, прысвечаны гісторыі грашовага
                     звароту на тэрыторыі краіны. У экспазіцыі прадстаўлены толькі арыгінальныя манеты і
@@ -138,22 +138,22 @@
                     сувеніры грашовай тэматыкі, што стане прыемным і каштоўным успамінам пра Беларусь для Вас і
                     Вашых блізкіх.</p>
                 </div>
-                <a class = "link_to_source" href = "http://mgroshi.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                <a class="link_to_source" href="http://mgroshi.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
         </main>
 
-        <footer class = "footer_container">
-            <div class = "footer_navigation">
+        <footer class="footer_container">
+            <div class="footer_navigation">
                 <ul>
-                    <li><a href = "index.php">Дамашняя</a></li>
-                    <li><a href = "SIGHTS.php">Славутасці</a></li>
-                    <li><a href = "MUSEUMS.php">Музеі</a></li>
-                    <li><a href = "FOOD.php">Кухня</a></li>
-                    <li><a href = "HOTELS.php">Жыллё</a></li>
+                    <li><a href="index.php">Дамашняя</a></li>
+                    <li><a href="SIGHTS.php">Славутасці</a></li>
+                    <li><a href="MUSEUMS.php">Музеі</a></li>
+                    <li><a href="FOOD.php">Кухня</a></li>
+                    <li><a href="HOTELS.php">Жыллё</a></li>
                 </ul>
             </div>
-            <div class = "footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
+            <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
         </footer>
 
     </body>
