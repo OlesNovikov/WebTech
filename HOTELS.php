@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang = "be">
+<html lang="be">
     <head>
-        <meta charset = "utf-8">
-        <meta name = "description" content = "Minsk guide">
-        <meta name = "keywords" content = "Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
+        <meta charset="utf-8">
+        <meta name="description" content="Minsk guide">
+        <meta name="keywords" content="Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
                                            Минск, отели, еда, музеи, достопримечательности, гайд, турист, посетить, путешествие,
                                            Мінск, гателі, ежа, музеі, славутасці, гайд, турыст, наведаць, падарожжа">
-        <meta name = "author" content = "Oles Novikov">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        <meta name="author" content="Oles Novikov">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
         <title>Мінск - жыллё</title>
-        <link rel = "stylesheet" href = "css/header.css">
-        <link rel = "stylesheet" href = "css/hotels.css">
-        <link rel = "stylesheet" href = "css/footer.css">
-        <link rel = "shortcut icon" href = "img/favicon.ico" type = "image/x-icon">
-        <link href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hotels.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <header class = "header_container">
-            <div class = "top_panel">
-                <div class = "top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
+        <header class="header_container">
+            <div class="top_panel">
+                <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
             </div>
-            <div class = "logo_navigation_container">
+            <div class="logo_navigation_container">
                 <div>
-                    <a href = "index.php"><img id = "site_logo" src = "img/Minsk_logo.jpg" alt = "logo"></a>
+                    <a href="index.php"><img id="site_logo" src="img/Minsk_logo.jpg" alt="logo"></a>
                 </div>
-                <nav class = "main_navigation">
-                    <ul class = "navigation_menu">
-                        <li><a href = "index.php">Дамашняя</a></li>
-                        <li><a href = "SIGHTS.php">Славутасці</a></li>
-                        <li><a href = "MUSEUMS.php">Музеі</a></li>
-                        <li><a href = "FOOD.php">Кухня</a></li>
-                        <li><a href = "HOTELS.php">Жыллё</a></li>
+                <nav class="main_navigation">
+                    <ul class="navigation_menu">
+                        <li><a href="index.php">Дамашняя</a></li>
+                        <li><a href="SIGHTS.php">Славутасці</a></li>
+                        <li><a href="MUSEUMS.php">Музеі</a></li>
+                        <li><a href="FOOD.php">Кухня</a></li>
+                        <li><a href="HOTELS.php">Жыллё</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class = "main_container">
+        <main class="main_container">
 
-            <article class = "all_articles">
-                    <img id = "Minsk_hotel_image" src = "img/Minsk_hotel.jpg" alt = "Гасцініца Мінск">
-                    <div id = "Minsk_hotel_description">
+            <article class="all_articles">
+                    <img id="Minsk_hotel_image" src="img/Minsk_hotel.jpg" alt="Гасцініца Мінск">
+                    <div id="Minsk_hotel_description">
                         <h1>Гасцініца Мінск</h1>
                         <p>Гэты традыцыйны гатэль знаходзіцца ў гістарычным і культурным цэнтры Мінска,
                         побач з Нацыянальным акадэмічным драматычным тэатрам ім. М. Горкага і ўсяго ў
@@ -57,12 +57,12 @@
                         Адлегласць да нацыянальнага аэрапорта Менска складае 42 км. За дадатковую плату
                         для гасцей арганізуюць трансфер.</p>
                     </div>
-                    <a class = "link_to_source" href = "http://www.hotelminsk.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="http://www.hotelminsk.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                    <img id = "Marriott_image" src = "img/Marriott_hotel.jpg" alt = "Гасцініца Marriott">
-                    <div id = "Marriott_description">
+            <article class="all_articles">
+                    <img id="Marriott_image" src="img/Marriott_hotel.jpg" alt="Гасцініца Marriott">
+                    <div id="Marriott_description">
                         <h1>Гасцініца Marriott</h1>
                         <p>Гатэль Minsk Marriott размешчаны на беразе ракі, у 10 хвілінах хады ад
                         нацыянальнага выставачнага цэнтра «Белэкспа». На тэрыторыі працуюць спа-цэнтр,
@@ -83,12 +83,12 @@
                         ад спартыўна-забаўляльнага комплексу «Мінск Арэна» і ў 57 км ад нацыянальнага
                         аэрапорта Мінск.</p>
                     </div>
-                    <a class = "link_to_source" href = "https://www.marriott.com.ru/hotels/travel/mhpmc-minsk-marriott-hotel/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="https://www.marriott.com.ru/hotels/travel/mhpmc-minsk-marriott-hotel/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                    <img id = "Double_Tree_image" src = "img/Double_Tree_hotel.jpg" alt = "Гасцініца Double Tree by Hilton">
-                    <div id = "Double_Tree_description">
+            <article class="all_articles">
+                    <img id="Double_Tree_image" src="img/Double_Tree_hotel.jpg" alt="Гасцініца Double Tree by Hilton">
+                    <div id="Double_Tree_description">
                         <h1>Гасцініца DoubleTree by Hilton</h1>
                         <p>Гатэль DoubleTree by Hilton Minsk размешчаны побач з гістарычным цэнтрам Менска
                         і ў 5 хвілінах хады ад станцыі метро "Няміга". Ва ўсіх памяшканнях падлучаны
@@ -114,12 +114,12 @@
                         <p>Цэнтральны чыгуначны вакзал знаходзіцца ў 3,5 км. Адлегласць да міжнароднага
                         аэрапорта Менска складае 45 км.</p>
                     </div>
-                    <a class = "link_to_source" href = "https://www.hilton.ru/hotels/doubletree-by-hilton-hotel-minsk/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="https://www.hilton.ru/hotels/doubletree-by-hilton-hotel-minsk/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                    <img id = "Renaissance_hotel_image" src = "img/Renaissance_hotel.png" alt = "Гасцініца Renaissance">
-                    <div id = "Renaissance_hotel_description">
+            <article class="all_articles">
+                    <img id="Renaissance_hotel_image" src="img/Renaissance_hotel.png" alt="Гасцініца Renaissance">
+                    <div id="Renaissance_hotel_description">
                         <h1>Гасцініца Renaissance</h1>
                         <p>У гатэлі Renaissance Minsk маецца сауна, фітнес-цэнтр, крыты басейн, а таксама
                         аздараўленчы спа-цэнтр. На тэрыторыі працуе бясплатны Wi-Fi і добраўпарадкавана
@@ -137,12 +137,12 @@
                         «Рэнесанс Менск» да чыгуначнага вакзала Мінска складае 2,7 км, а да
                         нацыянальнага аэрапорта Мінска - 55 км.</p>
                     </div>
-                    <a class = "link_to_source" href = "https://www.marriott.com.ru/hotels/travel/mhpbr-renaissance-minsk-hotel/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="https://www.marriott.com.ru/hotels/travel/mhpbr-renaissance-minsk-hotel/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
             
-            <article class = "all_articles">
-                    <img id = "Beijing_hotel_image" src = "img/Beijing_hotel.jpeg" alt = "Гасцініца Beijing">
-                    <div id = "Beijing_hotel_description">
+            <article class="all_articles">
+                    <img id="Beijing_hotel_image" src="img/Beijing_hotel.jpeg" alt="Гасцініца Beijing">
+                    <div id="Beijing_hotel_description">
                         <h1>Гасцініца Beijing</h1>
                         <p>Гатэль «Пекін Мінск» размешчаны ў Мінску, у 200 метрах ад станцыі метро
                         "Першамайская". Да паслуг гасцей крыты басейн і аздараўленчы спа-цэнтр.
@@ -159,12 +159,12 @@
                         <p>Адлегласць ад гатэля да чыгуначнага вакзала Мінск складае 1 км, а да
                         Нацыянальнага міжнароднага аэрапорта «Мінск» - 40 км.</p>
                     </div>
-                    <a class = "link_to_source" href = "http://beijinghotelminsk.com/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="http://beijinghotelminsk.com/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
-            <article class = "all_articles">
-                    <img id = "Bonhotel_image" src = "img/Bonhotel.png" alt = "Гасцініца Bonhotel">
-                    <div id = "Bonhotel_description">
+            <article class="all_articles">
+                    <img id="Bonhotel_image" src="img/Bonhotel.png" alt="Гасцініца Bonhotel">
+                    <div id="Bonhotel_description">
                         <h1>Гасцініца Bonhotel</h1>
                         <p>Гатэль BonHotel з бясплатным WiFi размешчаны ў цэнтры Мінска, у 350 метрах
                         ад станцыі метро Пушкінская.</p>
@@ -176,22 +176,22 @@
                         Цэнтральны чыгуначны вакзал Мінска знаходзіцца ў 5 км ад гатэля, а
                         нацыянальны аэрапорт «Мінск» - у 50 км.</p>
                     </div>
-                    <a class = "link_to_source" href = "http://bonhotel.by/" target = "_blank">Перайсці на афіцыйную старонку</a>
+                    <a class="link_to_source" href="http://bonhotel.by/" target="_blank">Перайсці на афіцыйную старонку</a>
             </article>
 
         </main>
 
-        <footer class = "footer_container">
-            <div class = "footer_navigation">
+        <footer class="footer_container">
+            <div class="footer_navigation">
                 <ul>
-                    <li><a href = "index.php">Дамашняя</a></li>
-                    <li><a href = "SIGHTS.php">Славутасці</a></li>
-                    <li><a href = "MUSEUMS.php">Музеі</a></li>
-                    <li><a href = "FOOD.php">Кухня</a></li>
-                    <li><a href = "HOTELS.php">Жыллё</a></li>
+                    <li><a href="index.php">Дамашняя</a></li>
+                    <li><a href="SIGHTS.php">Славутасці</a></li>
+                    <li><a href="MUSEUMS.php">Музеі</a></li>
+                    <li><a href="FOOD.php">Кухня</a></li>
+                    <li><a href="HOTELS.php">Жыллё</a></li>
                 </ul>
             </div>
-            <div class = "footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
+            <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
         </footer>
 
     </body>
