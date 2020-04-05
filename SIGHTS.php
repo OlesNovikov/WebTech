@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang = "be">
+<html lang="be">
     <head>
-        <meta charset = "utf-8">
-        <meta name = "description" content = "Minsk guide">
-        <meta name = "keywords" content = "Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
+        <meta charset="utf-8">
+        <meta name="description" content="Minsk guide">
+        <meta name="keywords" content="Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
                                            Минск, отели, еда, музеи, достопримечательности, гайд, турист, посетить, путешествие,
                                            Мінск, гателі, ежа, музеі, славутасці, гайд, турыст, наведаць, падарожжа">
-        <meta name = "author" content = "Oles Novikov">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=5.0">
+        <meta name="author" content="Oles Novikov">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
         <title>Мінск - славутасці</title>
-        <link rel = "stylesheet" href = "css/header.css">
-        <link rel = "stylesheet" href = "css/sights.css">
-        <link rel = "stylesheet" href = "css/footer.css">
-        <link rel = "shortcut icon" href = "img/favicon.ico" type = "image/x-icon">
-        <link href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/sights.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <header class = "header_container">
-            <div class = "top_panel">
-                <div class = "top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
+        <header class="header_container">
+            <div class="top_panel">
+                <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
             </div>
-            <div class = "logo_navigation_container">
-                <div class = "site_logo">
-                    <a href = "index.php"><img id = "site_logo" src = "img/Minsk_logo.jpg" alt = "logo"></a>
+            <div class="logo_navigation_container">
+                <div class="site_logo">
+                    <a href="index.php"><img id="site_logo" src="img/Minsk_logo.jpg" alt="logo"></a>
                 </div>
-                <nav class = "main_navigation">
-                    <ul class = "navigation_menu">
-                    <li><a href = "index.php">Дамашняя</a></li>
-                        <li><a href = "SIGHTS.php">Славутасці</a></li>
-                        <li><a href = "MUSEUMS.php">Музеі</a></li>
-                        <li><a href = "FOOD.php">Кухня</a></li>
-                        <li><a href = "HOTELS.php">Жыллё</a></li>
+                <nav class="main_navigation">
+                    <ul class="navigation_menu">
+                    <li><a href="index.php">Дамашняя</a></li>
+                        <li><a href="SIGHTS.php">Славутасці</a></li>
+                        <li><a href="MUSEUMS.php">Музеі</a></li>
+                        <li><a href="FOOD.php">Кухня</a></li>
+                        <li><a href="HOTELS.php">Жыллё</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class = "main_container">
+        <main class="main_container">
 
-            <article class = "all_articles">
-                <img id = "trinity_image" src = "img/Trinity_Suburb.jpg">
-                <div id = "trinity_description">
+            <article class="all_articles">
+                <img id="trinity_image" src="img/Trinity_Suburb.jpg">
+                <div id="trinity_description">
                     <h1>Траецкае прадмесце</h1>
                     <p>Гістарычны раён горада Мінска, размешчаны ў паўночна-ўсходняй частцы гістарычнага цэнтра
                     на левым беразе ракі Свіслач. Некалі з'яўляўся гандлёва-адміністрацыйным цэнтрам сталіцы
@@ -57,9 +57,9 @@
                 </div>
             </article>
 
-            <article class = "all_articles">
-                <img id = "library_image" src = "img/National_Library.jpg">
-                <div id = "library_description">
+            <article class="all_articles">
+                <img id="library_image" src="img/National_Library.jpg">
+                <div id="library_description">
                     <h1>Нацыянальная бібліятэка</h1>
                     <p>Дзяржаўная ўстанова «Нацыянальная бібліятэка Беларусі» - галоўная універсальная
                     навуковая бібліятэка Беларусі. Дырэктарам з'яўляецца прафесар, доктар педагагічных навук
@@ -73,9 +73,9 @@
                 </div>
             </article>
 
-            <article class = "all_articles">
-                <img id = "opera_image" src = "img/Opera.jpg">
-                <div id = "opera_description">
+            <article class="all_articles">
+                <img id="opera_image" src="img/Opera.jpg">
+                <div id="opera_description">
                     <h1>Тэатр оперы і балета</h1>
                     <p>адзіны оперны тэатр і найбуйнейшы тэатр у Беларусі, размешчаны ў Мінску.
                     Будынак тэатра з'яўляецца ўзорам савецкага даваеннага канструктывізму (аўтары - І. Г. Лангбард і Г. Лаўроў), мае статус помніка архітэктуры нацыянальнага значэння.  
@@ -83,9 +83,9 @@
                 </div>
             </article>
 
-            <article class = "all_articles">
-                <img id = "railway_image" src = "img/Railway_station.jpg">
-                <div id = "railway_description">
+            <article class="all_articles">
+                <img id="railway_image" src="img/Railway_station.jpg">
+                <div id="railway_description">
                     <h1>Вароты Мінска</h1>
                     <p>архітэктурны комплекс на Прывакзальнай плошчы ў Менску, які ўяўляе сабой два 11-павярховых будынка-вежы па кутах 5-павярховых дамоў, размешчаных сіметрычна адносна папярочнай восі плошчы (будынак вакзала - вуліца Кірава).</p>
                     <p>У канцы 1940-х гадоў разгарнуліся работы па рэканструкцыі Прывакзальнай плошчы (архітэктар Б. Рубаненкі), у выніку якіх быў створаны архітэктурны ансамбль плошчы ў стылі сталінскага ампіру.
@@ -95,17 +95,17 @@
 
         </main>
 
-        <footer class = "footer_container">
-            <div class = "footer_navigation">
+        <footer class="footer_container">
+            <div class="footer_navigation">
                 <ul>
-                    <li><a href = "index.php">Дамашняя</a></li>
-                    <li><a href = "SIGHTS.php">Славутасці</a></li>
-                    <li><a href = "MUSEUMS.php">Музеі</a></li>
-                    <li><a href = "FOOD.php">Кухня</a></li>
-                    <li><a href = "HOTELS.php">Жыллё</a></li>
+                    <li><a href="index.php">Дамашняя</a></li>
+                    <li><a href="SIGHTS.php">Славутасці</a></li>
+                    <li><a href="MUSEUMS.php">Музеі</a></li>
+                    <li><a href="FOOD.php">Кухня</a></li>
+                    <li><a href="HOTELS.php">Жыллё</a></li>
                 </ul>
             </div>
-            <div class = "footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
+            <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
         </footer>
 
     </body>
