@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang = "be">
+<html lang="be">
     <head>
-        <meta charset = "utf-8">
-        <meta name = "description" content = "Minsk guide">
-        <meta name = "keywords" content = "Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
+        <meta charset="utf-8">
+        <meta name="description" content="Minsk guide">
+        <meta name="keywords" content="Minsk, hotels, food, museums, sights, guide, tourist, visit, travel,
                                            Минск, отели, еда, музеи, достопримечательности, гайд, турист, посетить, путешествие,
                                            Мінск, гателі, ежа, музеі, славутасці, гайд, турыст, наведаць, падарожжа">
-        <meta name = "author" content = "Oles Novikov">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=5.0"> 
+        <meta name="author" content="Oles Novikov">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"> 
         <title>Мінск - гайд па сталіцы</title>
-        <link rel = "stylesheet" href = "css/header.css">
-        <link rel = "stylesheet" href = "css/index.css">
-        <link rel = "stylesheet" href = "css/footer.css">
-        <link rel = "shortcut icon" href = "img/favicon.ico" type = "image/x-icon">
-        <link href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
     
-        <header class = "header_container">
-            <div class = "top_panel">
-                <div class = "top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
+        <header class="header_container">
+            <div class="top_panel">
+                <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
             </div>
-            <div class = "logo_navigation_container">
+            <div class="logo_navigation_container">
                 <div>
-                    <a href = "index.php"><img id = "site_logo" src = "img/Minsk_logo.jpg" alt = "logo"></a>
+                    <a href="index.php"><img id="site_logo" src="img/Minsk_logo.jpg" alt="logo"></a>
                 </div>
-                <nav class = "main_navigation">
-                    <ul class = "navigation_menu">
-                        <li><a href = "index.php">Дамашняя</a></li>
-                        <li><a href = "SIGHTS.php">Славутасці</a></li>
-                        <li><a href = "MUSEUMS.php">Музеі</a></li>
-                        <li><a href = "FOOD.php">Кухня</a></li>
-                        <li><a href = "HOTELS.php">Жыллё</a></li>
+                <nav class="main_navigation">
+                    <ul class="navigation_menu">
+                        <li><a href="index.php">Дамашняя</a></li>
+                        <li><a href="SIGHTS.php">Славутасці</a></li>
+                        <li><a href="MUSEUMS.php">Музеі</a></li>
+                        <li><a href="FOOD.php">Кухня</a></li>
+                        <li><a href="HOTELS.php">Жыллё</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class = "main_container">
+        <main class="main_container">
 
-            <article class = "all_articles">
-                    <img id = "introduction_image" src = "img/Introduction_Minsk.jpg" alt = "introduction">
-                    <div id = "introduction_text">
+            <article class="all_articles">
+                    <img id="introduction_image" src="img/Introduction_Minsk.jpg" alt="introduction">
+                    <div id="introduction_text">
                         <h1>Увядзенне</h1>
                         <p><b>Мінск</b> - сталіца Беларусі, адміністрацыйны цэнтр Мінскай вобласці і
                             Мінскага раёна, у склад якіх не ўваходзіць, паколькі з'яўляецца
@@ -58,9 +58,9 @@
                     </div>
             </article>
 
-            <article class = "all_articles">
-                <img id = "geographical_image" src = "img/Minsk_from_space.jpg" alt = "Minsk_from_space">
-                <div id = "geographical_description">
+            <article class="all_articles">
+                <img id="geographical_image" src="img/Minsk_from_space.jpg" alt="Minsk_from_space">
+                <div id="geographical_description">
                     <h1>Геаграфічнае становішча</h1>
                     <p>Мінск размешчаны на паўднёва-ўсходнім схіле Мінскага ўзвышша, якое мае моранага паходжанне.
                     Яно ўтварылася падчас сожскага абляднення, апошняга, якi дасягнуў гэтай тэрыторыі.
@@ -73,9 +73,9 @@
                 </div>
             </article>
 
-            <article class = "all_articles">
-                <img id = "education_image" src = "img/BSUIR.jpg" alt = "education_image">
-                <div id = "education_description">
+            <article class="all_articles">
+                <img id="education_image" src="img/BSUIR.jpg" alt="education_image">
+                <div id="education_description">
                     <h1>Адукацыя</h1>
                     <p>У Мінску дзейнічае 28 ВНУ, у якіх у 2017/2018 навучальнага года навучалася 154,6
                     тыс. Студэнтаў - 54,4% ад агульнай колькасці студэнтаў у Рэспубліцы Беларусь.
@@ -97,17 +97,17 @@
 
         </main>
 
-        <footer class = "footer_container">
-            <div class = "footer_navigation">
+        <footer class="footer_container">
+            <div class="footer_navigation">
                 <ul>
-                    <li><a href = "index.php">Дамашняя</a></li>
-                    <li><a href = "SIGHTS.php">Славутасці</a></li>
-                    <li><a href = "MUSEUMS.php">Музеі</a></li>
-                    <li><a href = "FOOD.php">Кухня</a></li>
-                    <li><a href = "HOTELS.php">Жыллё</a></li>
+                    <li><a href="index.php">Дамашняя</a></li>
+                    <li><a href="SIGHTS.php">Славутасці</a></li>
+                    <li><a href="MUSEUMS.php">Музеі</a></li>
+                    <li><a href="FOOD.php">Кухня</a></li>
+                    <li><a href="HOTELS.php">Жыллё</a></li>
                 </ul>
             </div>
-            <div class = "footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
+            <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
         </footer>
 
     </body>
