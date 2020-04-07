@@ -9,9 +9,11 @@ a {
     text-decoration: none;
     color: #989797;
 }
+.navigation_menu>.active {
+    border-bottom: 2px solid #f0bc00;
+}
 .active {
     color: #f0bc00;
-    border-bottom: 2px solid #f0bc00;
 }
 p {
     margin: 0px;
@@ -63,7 +65,7 @@ li {
 .navigation_menu li a:hover {
     border-bottom: 2px solid #f0bc00;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .main_navigation ul {
         width: 100%;
     }

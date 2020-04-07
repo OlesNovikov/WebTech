@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/hotels.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -27,11 +27,7 @@
                 </div>
                 <nav class="main_navigation">
                     <ul class="navigation_menu">
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'index.php' ? "active" : "normal")?>" href="index.php">Дамашняя</a></li>
-                        <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'SIGHTS.php' ? "active" : "normal")?>" href="SIGHTS.php">Славутасці</a></li>
-                        <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'MUSEUMS.php' ? "active" : "normal")?>" href="MUSEUMS.php">Музеі</a></li>
-                        <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'FOOD.php' ? "active" : "normal")?>" href="FOOD.php">Кухня</a></li>
-                        <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'HOTELS.php' ? "active" : "normal")?>" href="HOTELS.php">Жыллё</a></li>
+                        <?php include "navigation.php"; ?>
                     </ul>
                 </nav>
             </div>
@@ -184,11 +180,7 @@
         <footer class="footer_container">
             <div class="footer_navigation">
                 <ul>
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'index.php' ? "activefoo" : "normal")?>" href="index.php">Дамашняя</a></li>
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'SIGHTS.php' ? "activefoo" : "normal")?>" href="SIGHTS.php">Славутасці</a></li>
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'MUSEUMS.php' ? "activefoo" : "normal")?>" href="MUSEUMS.php">Музеі</a></li>
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'FOOD.php' ? "activefoo" : "normal")?>" href="FOOD.php">Кухня</a></li>
-                    <li><a class="<?=(basename($_SERVER["PHP_SELF"]) == 'HOTELS.php' ? "activefoo" : "normal")?>" href="HOTELS.php">Жыллё</a></li>
+                    <?php include "navigation.php"; ?>
                 </ul>
             </div>
             <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
