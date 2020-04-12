@@ -34,111 +34,117 @@
         </header>
 
         <main class="main_container">
+            
+        <article id="lab2" class="all_articles">
+            <h1>Лабараторная работа №2</h1>
+                <p id="first_task">
+                    Варыянт 4: Стварыце 2 масіва з цэлымі лічбамі праз 2 палі формы, аб'яднаеце два масіва
+                    ў адзін (не выкарыстоўваючы спецыяльныя функцыі PHP тыпу array_merge (arr1, arr2)!),
+                    Выведзіце ўсе цотныя лічбы з атрыманага масіва.
+                </p>
+                <form action="AdditionalTask.php#lab2" method="post" id="Task_container">
+                    <label>Першы масіў:</label>
+                    <br>
+                    <input type="text" id="first_array_numbers" name="first_array_numbers">
+                    <br><br>
 
-            <form action="AdditionalTask.php" method="post" id="Task_container">
-                <label>Першы масіў:</label>
-                <br>
-                <input type="text" id="first_array_numbers" name="first_array_numbers">
-                <br><br>
+                    <label>Другі масіў:</label>
+                    <br>
+                    <input type="text" id="second_array_numbers" name="second_array_numbers">
+                    <br><br>
+                    <input name="make_arrays" type="submit" value="Толькі цотныя лічбы">
+                </form>
 
-                <label>Другі масіў:</label>
-                <br>
-                <input type="text" id="second_array_numbers" name="second_array_numbers">
-                <br><br>
-                <input name="make_arrays" type="submit" value="Паказаць першы і другі масіў">
-
-                <?php 
-                    if (isset($_POST['make_arrays'])) {
-                        $string_first_array = $_POST['first_array_numbers'];
-                        $string_second_array = $_POST['second_array_numbers'];
-
-                        $first_array = explode(" ", $string_first_array);
-                        $second_array = explode(" ", $string_second_array);
-                    }
-                ?>
-                <br><br>
-
-                <?php
-
-                function ArrayIsNumeric($array) {
-                    $valid = true;
-                    $i = 0;
-                    while (valid && $i < count($array)) {
-                        if (!(is_numeric($array[$i]))) {
-                            $valid = false;
-                        }
-                        $i++;
-                    } 
-                    return $valid;
-                }
-
-                ?>
-
-                <label>Першы масіў: 
+                <div id="output_container1">
                     <?php 
-                        if (ArrayIsNumeric($first_array)) {
-                            for ($i = 0; $i < count($first_array); $i++) {
-                                echo $first_array[$i] . " ";
-                            }
-                        } else {
-                            echo "Калі ласка, увядзіце толькі лічбы";
+                        if (isset($_POST['make_arrays'])) {
+                            $stringFirstArray = $_POST['first_array_numbers'];
+                            $stringSecondArray = $_POST['second_array_numbers'];
+
+                            $firstArray = explode(" ", $stringFirstArray);
+                            $secondArray = explode(" ", $stringSecondArray);
                         }
                     ?>
-                </label>
 
-                <br><br>
-                <label>Другі масіў: 
-                    <?php 
-                        if (ArrayIsNumeric($second_array)) {
-                            for ($i = 0; $i < count($second_array); $i++) {
-                                echo $second_array[$i] . " ";
-                            }
-                        } else {
-                            echo "Калі ласка, увядзіце толькі лічбы";
-                        }
-                    ?>
-                </label>
-                <br><br>
-
-                <label>Аб'еднаны масіў:
-                    <?php                
-                        if (ArrayIsNumeric($first_array) && ArrayIsNumeric($second_array)) {
-                            for ($i = 0; $i < count($first_array); $i++) {
-                                $united_array[] = $first_array[$i];
-                            }
-    
-                            for ($i = 0; $i < count($second_array); $i++) {
-                                $united_array[] = $second_array[$i];
-                            }
-    
-                            for ($i = 0; $i < count($united_array); $i++) {
-                                echo $united_array[$i] . " ";
-                            }
-                        } else {
-                            echo "Калі ласка, увядзіце толькі лічбы";
-                        } 
-                    ?>
-                </label>
-                <br><br>
-
-                <label>Толькі цотныя лічбы: 
-                    <?php 
-                        if (ArrayIsNumeric($first_array) && ArrayIsNumeric($second_array)) {
-                            for ($i = 0; $i < count($united_array); $i++) {
-                                if (($united_array[$i] % 2) == 0) {
-                                    $only_even_numbers[] = $united_array[$i];
+                    <?php
+                        function arrayIsNumeric($array) {
+                            foreach ($array as $item) {
+                                if (!is_numeric($item)) {
+                                  return false;
                                 }
+                              }
+                              
+                            return true;
+                        }
+
+                        function echoArray($array) {
+                            foreach ($array as $item) {
+                                echo sprintf('%d ', $item);
                             }
-    
-                            for ($i = 0; $i < count($only_even_numbers); $i++) {
-                                echo $only_even_numbers[$i] . " ";
-                            }
-                        } else {
-                            echo "Калі ласка, увядзіце толькі лічбы";
                         }
                     ?>
-                </label> 
-            </form>
+
+                    <label>Першы масіў:
+                        <?php 
+                            if (arrayIsNumeric($firstArray)) {
+                                echoArray($firstArray);
+                            } else {
+                                echo "Калі ласка, увядзіце толькі лічбы";
+                            }
+                        ?>
+                    </label>
+
+                    <br><br>
+
+                    <label>Другі масіў:
+                        <?php 
+                            if (arrayIsNumeric($secondArray)) {
+                                echoArray($secondArray);
+                            } else {
+                                echo "Калі ласка, увядзіце толькі лічбы";
+                            }
+                        ?>
+                    </label>
+
+                    <br><br>
+
+                    <label>Аб'еднаны масіў:
+                        <?php                
+                            if (arrayIsNumeric($firstArray) && arrayIsNumeric($secondArray)) {
+                                foreach ($firstArray as $item) {
+                                    $unitedArray[] = $item;
+                                }
+                                foreach ($secondArray as $item) {
+                                    $unitedArray[] = $item;
+                                }
+                                echoArray($unitedArray);
+                            } else {
+                                echo "Калі ласка, увядзіце толькі лічбы";
+                            } 
+                        ?>
+                    </label>
+
+                    <br><br>
+
+                    <label>Толькі цотныя лічбы: 
+
+                        <?php 
+                            if (ArrayIsNumeric($firstArray) && ArrayIsNumeric($secondArray)) {
+                                foreach ($unitedArray as $item) {
+                                    if (($item % 2) === 0) {
+                                        $onlyEvenNumbers[] = $item;
+                                    }
+                                }
+                                echoArray($onlyEvenNumbers);
+                            } else {
+                                echo "Калі ласка, увядзіце толькі лічбы";
+                            }
+                        ?>
+
+                    </label> 
+                </div>
+
+            </article>
 
         </main>
 
