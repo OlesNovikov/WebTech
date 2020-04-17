@@ -129,7 +129,7 @@
                     <label>Толькі цотныя лічбы: 
 
                         <?php 
-                            if (ArrayIsNumeric($firstArray) && ArrayIsNumeric($secondArray)) {
+                            if (arrayIsNumeric($firstArray) && arrayIsNumeric($secondArray)) {
                                 foreach ($unitedArray as $item) {
                                     if (($item % 2) === 0) {
                                         $onlyEvenNumbers[] = $item;
