@@ -185,17 +185,17 @@
                                 $cols = 2;
                                 echo '<br><br>';
                                 echo '<table id="output_table" border="1">';
-                                    echo sprintf('<th colspan="2">%s</th>', $catalogPath);
+                                echo sprintf('<th colspan="2">%s</th>', $catalogPath);
                                     
-                                    $i = 0;
-                                    for ($td = 1; $td <= $rows; $td++) {
-                                        echo '<tr>';
-                                        for ($tr = 1; $tr <= $cols; $tr++) {
-                                            echo sprintf('<td>%s</td>', basename($pathArray[$i]));
-                                            $i++;
-                                        }
-                                        echo '<tr>';
+                                $i = 0;
+                                for ($td = 1; $td <= $rows; $td++) {
+                                    echo '<tr>';
+                                    for ($tr = 1; $tr <= $cols; $tr++) {
+                                        echo sprintf('<td>%s</td>', basename($pathArray[$i]));
+                                        $i++;
                                     }
+                                    echo '<tr>';
+                                }
                                 echo '</table>';
                             } else {
                                 echo 'Такога каталога не існуе';
@@ -231,15 +231,15 @@
                 </form>
 
                 <?php 
-                    function callback_f($matches) {
+                    $callbackFunction = function ($matches) {
                         if ($matches[0][0] == '+') {
                             $matches[0] = '<u>' . $matches[0] . '</u>';
                         }
                         return '<mark>' . $matches[0] . '</mark>';
-                    }
+                    };
                     $inputTextArray = $_POST['textarea4_text'];
                     $regEx = '/((((\+?375|80))((29|25|33|44)|(\(25\)|\(29\)|\(33\)|\(44\))))?([0-9]{7})|([0-9]{3}\s[0-9]{2}\s[0-9]{2})|([0-9]{3}\-[0-9]{2}\-[0-9]{2}))/';
-                    $inputTextArray = preg_replace_callback($regEx, "callback_f", $inputTextArray);
+                    $inputTextArray = preg_replace_callback($regEx, $callbackFunction, $inputTextArray);
                     echo sprintf('<p id="third_task">%s</p>', $inputTextArray);
                 ?>
 
