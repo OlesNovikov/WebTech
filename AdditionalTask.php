@@ -191,17 +191,17 @@
                                 $cols = 2;
                                 echo '<br><br>';
                                 echo '<table id="output_table" border="1">';
-                                    echo sprintf('<th colspan="2">%s</th>', $catalogPath);
+                                echo sprintf('<th colspan="2">%s</th>', $catalogPath);
                                     
-                                    $i = 0;
-                                    for ($td = 1; $td <= $rows; $td++) {
-                                        echo '<tr>';
-                                        for ($tr = 1; $tr <= $cols; $tr++) {
-                                            echo sprintf('<td>%s</td>', basename($pathArray[$i]));
-                                            $i++;
-                                        }
-                                        echo '<tr>';
+                                $i = 0;
+                                for ($td = 1; $td <= $rows; $td++) {
+                                    echo '<tr>';
+                                    for ($tr = 1; $tr <= $cols; $tr++) {
+                                        echo sprintf('<td>%s</td>', basename($pathArray[$i]));
+                                        $i++;
                                     }
+                                    echo '<tr>';
+                                }
                                 echo '</table>';
                             } else {
                                 echo "Такога каталога не існуе";
