@@ -103,6 +103,7 @@
             <div class="footer_navigation">
                 <ul>
                     <?php include "navigation.php"; ?>
+
                 </ul>
             </div>
             <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>
