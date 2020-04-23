@@ -12,11 +12,10 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/sights.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-
         <header class="header_container">
             <div class="top_panel">
                 <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
@@ -27,11 +26,7 @@
                 </div>
                 <nav class="main_navigation">
                     <ul class="navigation_menu">
-                    <li><a href="index.php">Дамашняя</a></li>
-                        <li><a href="SIGHTS.php">Славутасці</a></li>
-                        <li><a href="MUSEUMS.php">Музеі</a></li>
-                        <li><a href="FOOD.php">Кухня</a></li>
-                        <li><a href="HOTELS.php">Жыллё</a></li>
+                        <?php include "navigation.php"; ?>
                     </ul>
                 </nav>
             </div>
@@ -98,11 +93,7 @@
         <footer class="footer_container">
             <div class="footer_navigation">
                 <ul>
-                    <li><a href="index.php">Дамашняя</a></li>
-                    <li><a href="SIGHTS.php">Славутасці</a></li>
-                    <li><a href="MUSEUMS.php">Музеі</a></li>
-                    <li><a href="FOOD.php">Кухня</a></li>
-                    <li><a href="HOTELS.php">Жыллё</a></li>
+                    <?php include "navigation.php"; ?>
                 </ul>
             </div>
             <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>

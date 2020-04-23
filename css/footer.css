@@ -9,6 +9,9 @@ a {
     text-decoration: none;
     color: #989797;
 }
+.active {
+    color: #f0bc00;
+}
 li {
     display: block;
 }
