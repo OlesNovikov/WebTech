@@ -1,0 +1,38 @@
+.main_container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main_container h1 {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+.all_articles {
+    box-shadow: 0 3px 15px rgba(103,122,141,0.17);
+    background: #fff;
+    width: 30%;
+    text-align: justify;
+    margin: 8px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all_articles:hover {
+    box-shadow: 0 3px 15px rgba(103,122,141,1);
+}
+#country_image, #money_image, #art_image, #contemporary_image, #historical_image, #Las_Legas_image {
+    padding: 20px 0px 20px 0px;
+    width: 90%;
+}
+#country_description, #money_description, #art_description, #contemporary_description, #historical_description, #Las_Legas_description {
+    width: 90%;
+    padding: 0px 0px 20px 0px;
+}
+.link_to_source {
+    padding-bottom: 10px;
+}
+.link_to_source:hover {
+    color: #f0bc00;
+}
