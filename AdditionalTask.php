@@ -184,7 +184,7 @@
                                 $rows = count($pathArray) / 2;
                                 $cols = 2;
                                 echo '<br><br>';
-                                echo '<table id="output_table" border="1">';
+                                echo '<table border="1">';
                                 echo sprintf('<th colspan="2">%s</th>', $catalogPath);
                                     
                                 $i = 0;
@@ -242,7 +242,72 @@
                     $inputTextArray = preg_replace_callback($regEx, $callbackFunction, $inputTextArray);
                     echo sprintf('<p id="third_task">%s</p>', $inputTextArray);
                 ?>
+            </article>
 
+            <article id="lab5" class="all_articles">
+                <h1>Лабараторная работа №5</h1>
+                <p id="fourth_task">
+                    Варыянт 11: напісаць скрыпт, які б па зададзеным годзе выводзіць бліжэйшыя пяць
+                    гадоў назвы па кітайскім календары. Год атрымліваць праз вебформу.
+                </p>
+                <form action="AdditionalTask.php#lab5" method="POST" id="Form5_container">
+                    <input type="text" id="input_year" name="input_year">
+                    <br>
+                    <input type="submit" name="search_button" value="Паказаць">
+                    <?php
+                        function yearInRange() {
+                            if ($_POST['input_year'] < MIN_YEAR || $_POST['input_year'] > MAX_YEAR) return false;
+                            return true;
+                        }
+
+                        const MIN_YEAR = 1900;
+                        const MAX_YEAR = 10000;
+                        if (yearInRange()) {
+                            $year = $_POST['input_year'];
+                            $host = 'localhost';
+                            $user = 'Oles';
+                            $password = 'Erda_2020';
+                            $dbName = 'minskguide';
+
+                            $link = mysqli_connect($host, $user, $password, $dbName);
+                            if (!$link) {
+                                echo sprintf('<br>Код памылкі: %s', mysqli_connect_errno());
+                            } else {
+                                $sqlQuery = 'SELECT * FROM years WHERE id > 0';
+                                $result = mysqli_query($link, $sqlQuery) or die(mysqli_error($link));
+                                for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
+                                $i = 1;
+                                while ($i < 6) {
+                                    $id = ($year % 12 + $i) % 12;
+                                    $nextFiveYears[] = $data[$id]['year_of'];
+                                    $i++;
+                                }
+                                echo '<br>';
+                                $inputYearId = $year % 12;
+                                echo sprintf('Уведзены год %d: %s', $year, $data[$inputYearId]['year_of']); 
+
+                                $rows = 5;
+                                $cols = 1;
+                                echo '<table id="output_table" border="1">';
+                                echo sprintf('<th>Наступныя 5 гадоў</th>');
+                                    
+                                $i = 0;
+                                for ($td = 1; $td <= $rows; $td++) {
+                                    echo '<tr>';
+                                    for ($tr = 1; $tr <= $cols; $tr++) {
+                                        echo sprintf('<td>%d: %s</td>', $year + 1 + $i, $nextFiveYears[$i]);
+                                        $i++;
+                                    }
+                                    echo '<tr>';
+                                }
+                                echo '</table>';
+
+                            }
+                        } else {
+                            echo sprintf('<br>Год павінен быць паміж %d і %d', MIN_YEAR, MAX_YEAR);
+                        }
+                    ?>
+                </form>
             </article>
             
         </main>

@@ -14,7 +14,7 @@ mark {
     color: green;
     background: white;
 }
-.main_container, #Form4_container, #Form2_container, #Form3_container {
+.main_container, #Form2_container, #Form3_container, #Form4_container, #Form5_container {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -41,12 +41,15 @@ mark {
 #make_array_button {
     margin: 8px;
 }
-#Form4_container, #Form2_container, #Form3_container {
+#Form2_container, #Form3_container, #Form4_container, #Form5_container {
     width: 100%;
 }
-#first_task, #second_task, #third_task {
+#first_task, #second_task, #third_task, #fourth_task {
     margin: 20px;
 }
 #textarea4_text {
     width: 70%;
+}
+#output_table {
+    margin: 20px;
 }
