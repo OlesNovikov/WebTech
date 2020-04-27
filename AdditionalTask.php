@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+    if (isset($_SESSION['serializedArray'])) {
+        $unserializedArray = unserialize($_SESSION['serializedArray']);
+    }
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
@@ -61,9 +67,7 @@
                             $firstArray = explode(" ", $stringFirstArray);
                             $secondArray = explode(" ", $stringSecondArray);
                         }
-                    ?>
 
-                    <?php
                         function arrayIsNumeric($array) {
                             foreach ($array as $item) {
                                 if (!is_numeric($item)) {
@@ -254,6 +258,7 @@
                     <input type="text" id="input_year" name="input_year">
                     <br>
                     <input type="submit" name="search_button" value="Паказаць">
+                </form>
                     <?php
                         function yearInRange() {
                             if ($_POST['input_year'] < MIN_YEAR || $_POST['input_year'] > MAX_YEAR) return false;
@@ -307,7 +312,29 @@
                             echo sprintf('<br>Год павінен быць паміж %d і %d', MIN_YEAR, MAX_YEAR);
                         }
                     ?>
-                </form>
+            </article>
+
+            <article id="lab6" class="all_articles">
+                <h1>Лабараторная работа №6</h1>
+                <p id="fifth_task">
+                    Варыянт 2: напісаць два скрыпту, адзін з якіх фарміруе адвольны набор дадзеных
+                    (лічбы, радкі, масівы) і перадае іх іншаму скрыпту ў серыялізованай форме. Другі
+                    скрыпт десерыялізуе дадзеныя.   
+                    <?php
+                        echo '<br>';
+                        foreach ($unserializedArray as $item) {
+                            if (is_array($item)) {
+                                echo sprintf('<br>Рандомны масіў: ');
+                                for ($i = 0; $i < count($item); $i++) echo sprintf('%s, ', $item[$i]);
+                            } else {
+                                if (is_numeric($item)) echo sprintf('<br>Рандомная лічба: %d', $item);
+                                else echo sprintf('<br>Рандомная страка: %s', $item);
+                            }
+                        }
+                        unset($_SESSION['unserializedArray']);
+                        session_destroy();
+                    ?>
+                </p>
             </article>
             
         </main>

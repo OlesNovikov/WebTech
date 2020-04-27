@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    include 'session.php';
+    $_SESSION['serializedArray'] = $serializedArray;
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
