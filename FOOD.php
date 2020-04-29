@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    include 'session.php';
+    $_SESSION['serializedArray'] = $serializedArray;
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
@@ -103,7 +107,6 @@
             <div class="footer_navigation">
                 <ul>
                     <?php include "navigation.php"; ?>
-
                 </ul>
             </div>
             <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>

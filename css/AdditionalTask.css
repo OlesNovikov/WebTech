@@ -14,7 +14,7 @@ mark {
     color: green;
     background: white;
 }
-.main_container, #Form4_container, #Form2_container, #Form3_container {
+.main_container, #Form2_container, #Form3_container, #Form4_container, #Form5_container, #Form7_container {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -41,12 +41,18 @@ mark {
 #make_array_button {
     margin: 8px;
 }
-#Form4_container, #Form2_container, #Form3_container {
+#Form2_container, #Form3_container, #Form4_container, #Form5_container, #Form7_container {
     width: 100%;
 }
-#first_task, #second_task, #third_task {
+#first_task, #second_task, #third_task, #fourth_task, #fifth_task, #sixth_task, #error_message {
     margin: 20px;
 }
-#textarea4_text {
+#textarea4_text, #textarea7_text, #receivers, #subject {
     width: 70%;
+}
+#output_table {
+    margin: 20px;
+}
+#error_message {
+    color: red;
 }

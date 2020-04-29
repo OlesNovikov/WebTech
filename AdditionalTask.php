@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+    if (isset($_SESSION['serializedArray'])) {
+        $unserializedArray = unserialize($_SESSION['serializedArray']);
+    }
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
@@ -61,9 +67,7 @@
                             $firstArray = explode(" ", $stringFirstArray);
                             $secondArray = explode(" ", $stringSecondArray);
                         }
-                    ?>
 
-                    <?php
                         function arrayIsNumeric($array) {
                             foreach ($array as $item) {
                                 if (!is_numeric($item)) {
@@ -184,7 +188,7 @@
                                 $rows = count($pathArray) / 2;
                                 $cols = 2;
                                 echo '<br><br>';
-                                echo '<table id="output_table" border="1">';
+                                echo '<table border="1">';
                                 echo sprintf('<th colspan="2">%s</th>', $catalogPath);
                                     
                                 $i = 0;
@@ -225,7 +229,9 @@
                     (пачынаюцца з "+ КОД-") падкрэсліць. Тэкст ўводзіць праз форму.
                 </p>
                 <form action="AdditionalTask.php#lab4" method="post" id="Form4_container">
-                        <textarea rows="10" id="textarea4_text" name="textarea4_text">Lorem Ipsum 123 45 67 is simply dummy text of the printing and 1234567 typesetting industry. Lorem Ipsum has been +375(25)1234567 the industry's standard dummy +375441234567 text ever since the 1500s, when an unknown printer 1234567 took a galley of type and scrambled it to 80441234567 make a type specimen book. It has survived not only five centuries, 123-45-67 but also the leap into electronic typesetting, remaining 123 45 67 essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+                        <textarea rows="10" id="textarea4_text" name="textarea4_text">
+                            Lorem Ipsum 123 45 67 is simply dummy text of the printing and 1234567 typesetting industry. Lorem Ipsum has been +375(25)1234567 the industry's standard dummy +375441234567 text ever since the 1500s, when an unknown printer 1234567 took a galley of type and scrambled it to 80441234567 make a type specimen book. It has survived not only five centuries, 123-45-67 but also the leap into electronic typesetting, remaining 123 45 67 essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </textarea>
                         <br>
                         <input type="submit" name="search_button" value="Вылучыць усе нумары">
                 </form>
@@ -242,7 +248,167 @@
                     $inputTextArray = preg_replace_callback($regEx, $callbackFunction, $inputTextArray);
                     echo sprintf('<p id="third_task">%s</p>', $inputTextArray);
                 ?>
+            </article>
 
+            <article id="lab5" class="all_articles">
+                <h1>Лабараторная работа №5</h1>
+                <p id="fourth_task">
+                    Варыянт 11: напісаць скрыпт, які б па зададзеным годзе выводзіць бліжэйшыя пяць
+                    гадоў назвы па кітайскім календары. Год атрымліваць праз вебформу.
+                </p>
+                <form action="AdditionalTask.php#lab5" method="POST" id="Form5_container">
+                    <input type="text" id="input_year" name="input_year">
+                    <br>
+                    <input type="submit" name="search_button" value="Паказаць">
+                </form>
+                    <?php
+                        function yearInRange() {
+                            if ($_POST['input_year'] < MIN_YEAR || $_POST['input_year'] > MAX_YEAR) return false;
+                            return true;
+                        }
+
+                        const MIN_YEAR = 1900;
+                        const MAX_YEAR = 10000;
+                        if (yearInRange()) {
+                            $year = $_POST['input_year'];
+                            $host = 'localhost';
+                            $user = 'Oles';
+                            $password = 'Erda_2020';
+                            $dbName = 'minskguide';
+
+                            $link = mysqli_connect($host, $user, $password, $dbName);
+                            if (!$link) {
+                                echo sprintf('<br>Код памылкі: %s', mysqli_connect_errno());
+                            } else {
+                                $sqlQuery = 'SELECT * FROM years WHERE id > 0';
+                                $result = mysqli_query($link, $sqlQuery) or die(mysqli_error($link));
+                                for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
+                                $i = 1;
+                                while ($i < 6) {
+                                    $id = ($year % 12 + $i) % 12;
+                                    $nextFiveYears[] = $data[$id]['year_of'];
+                                    $i++;
+                                }
+                                echo '<br>';
+                                $inputYearId = $year % 12;
+                                echo sprintf('Уведзены год %d: %s', $year, $data[$inputYearId]['year_of']); 
+
+                                $rows = 5;
+                                $cols = 1;
+                                echo '<table id="output_table" border="1">';
+                                echo sprintf('<th>Наступныя 5 гадоў</th>');
+                                    
+                                $i = 0;
+                                for ($td = 1; $td <= $rows; $td++) {
+                                    echo '<tr>';
+                                    for ($tr = 1; $tr <= $cols; $tr++) {
+                                        echo sprintf('<td>%d: %s</td>', $year + 1 + $i, $nextFiveYears[$i]);
+                                        $i++;
+                                    }
+                                    echo '<tr>';
+                                }
+                                echo '</table>';
+
+                            }
+                        } else {
+                            echo sprintf('<br>Год павінен быць паміж %d і %d', MIN_YEAR, MAX_YEAR);
+                        }
+                    ?>
+            </article>
+
+            <article id="lab6" class="all_articles">
+                <h1>Лабараторная работа №6</h1>
+                <p id="fifth_task">
+                    Варыянт 2: напісаць два скрыпту, адзін з якіх фарміруе адвольны набор дадзеных
+                    (лічбы, радкі, масівы) і перадае іх іншаму скрыпту ў серыялізованай форме. Другі
+                    скрыпт десерыялізуе дадзеныя.   
+                    <?php
+                        echo '<br>';
+                        foreach ($unserializedArray as $item) {
+                            if (is_array($item)) {
+                                echo sprintf('<br>Рандомны масіў: ');
+                                for ($i = 0; $i < count($item); $i++) echo sprintf('%s, ', $item[$i]);
+                            } else {
+                                if (is_numeric($item)) echo sprintf('<br>Рандомная лічба: %d', $item);
+                                else echo sprintf('<br>Рандомная страка: %s', $item);
+                            }
+                        }
+                        unset($_SESSION['unserializedArray']);
+                        session_destroy();
+                    ?>
+                </p>
+            </article>
+
+            <article id="lab7" class="all_articles">
+                <h1>Лабараторная работа №7</h1>
+                <p id="sixth_task">
+                    Варыянт 2: Выведзіце форму на сайце з наступнымі палямі: «Атрымальнікі», «Тэма»,
+                    «Тэкст паведамлення» і кнопкай «Адправіць». У полі «Атрымальнікі» увядзіце праз
+                    прабел або іншы усталяваны паасобны сімвал (, або;) адрасы электроннай пошты
+                    атрымальнікаў. Атрымаеце ўсе дадзеныя з формы, праверце іх правільнасць, пры памылцы
+                    выведзіце адпаведнае паведамленне, пакінуўшы уведзеныя ў палях формы, пры паспяховым
+                    выніку праверкі - разашліце ліст. Захавайце у тэкставым файле спіс атрымальнікаў.
+                </p>
+                <form action="AdditionalTask.php#lab7" method="post" id="Form7_container">
+                    <label>Атрымальнікі (праз прабел)</label>
+                    <input type="text" id="receivers" name="receivers">
+                    <br>
+                    <label>Тэма</label>
+                    <input type="text" id="subject" name="subject">
+                    <br>
+                    <label>Тэкст паведамлення</label>
+<textarea rows="10" id="textarea7_text" name="textarea7_text">
+</textarea>
+                    <br>
+                    <input type="submit" name="send_button" value="Адправіць">
+                </form>
+
+                <?php
+                    require 'includes/PHPMailer.php';
+                    require 'includes/SMTP.php';
+                    require 'includes/Exception.php';
+
+                    use PHPMailer\PHPMailer\PHPMailer;
+                    use PHPMailer\PHPMailer\SMTP;
+                    use PHPMailer\PHPMailer\Exception;
+                    
+                    $senderEmail = 'lxnvkv@gmail.com';
+                    $senderPassword = 'WTpass2020';
+
+                    if (isset($_POST['send_button'])) {
+                        $receiversArray = explode(' ', $_POST['receivers']);
+                        $subject = $_POST['subject'];
+                        $message = $_POST['textarea7_text'];
+                        if ((count($receiversArray) > 0) && (strlen($subject) != 0) && (strlen($message) != 0)) {
+                            $mail = new PHPMailer();
+                            $mail->isSMTP();
+                            $mail->Host = 'smtp.gmail.com';
+                            $mail->SMTPAuth = 'true';
+                            $mail->SMTPSecure = 'tls';
+                            $mail->Port = '587';
+                            $mail->Username = $senderEmail;
+                            $mail->Password = $senderPassword;
+                            $mail->Subject = $subject;
+                            $mail->setFrom($senderEmail);
+                            $mail->Body = $message;
+
+                            $receiversFile = fopen('AllReceivers.txt', 'w');
+                            foreach ($receiversArray as $email) {
+                                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                    $mail->addAddress($email);
+                                    if ($mail->Send()) {
+                                        echo sprintf('<p id="sixth_task">Паведамленне адпраўлена %s</p>', $email);
+                                        fwrite($receiversFile, $email);
+                                    } else echo sprintf('<p id="sixth_task">Памылка... паведамленне не было адпраўлена %s</p>', $email);
+                                } else echo sprintf('<p id="sixth_task">Электронная пошта ўведзена няправільна: %s</p>', $email);
+                            }
+                            fclose($receiversFile);
+                        } else {
+                            echo '<p id="error_message">Вы ўвялі не ўсе дадзеныя</p>';
+                        }
+                        $mail->smtpClose();
+                    }
+                ?>
             </article>
             
         </main>
