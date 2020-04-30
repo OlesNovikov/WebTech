@@ -3,18 +3,19 @@ h1 {
     padding: 20px 0px 0px 0px;
 }
 table {
-    margin: auto;
     border-collapse: collapse;
-    table-layout: fixed;
+    border: 1px solid silver;
+    margin: 20px;
 }
 td, th {
     padding: 5px;
+    border: 1px solid silver;
 }
 mark {
     color: green;
     background: white;
 }
-.main_container, #Form4_container, #Form2_container, #Form3_container {
+.main_container, .all_forms {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -38,15 +39,18 @@ mark {
 #first_array_numbers, #second_array_numbers {
     margin: 8px 0px;
 }
-#make_array_button {
+.all_buttons{
     margin: 8px;
 }
-#Form4_container, #Form2_container, #Form3_container {
+.all_forms {
     width: 100%;
 }
-#first_task, #second_task, #third_task {
+.all_tasks, #error_message {
     margin: 20px;
 }
-#textarea4_text {
+#textarea4_text, #textarea7_text, #receivers, #subject {
     width: 70%;
+}
+#error_message {
+    color: red;
 }

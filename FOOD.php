@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    include 'session.php';
+    $_SESSION['serializedArray'] = $serializedArray;
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
@@ -34,7 +38,7 @@
         </header>
 
         <main class = "main_container">
-
+            <?php include "visitCount.php"; ?>
             <article class="all_articles">
                     <img id="Vasilki_image" src="img/Vasilki.jpg" alt="Васількі">
                     <div id="Vasilki_description">
@@ -103,7 +107,6 @@
             <div class="footer_navigation">
                 <ul>
                     <?php include "navigation.php"; ?>
-
                 </ul>
             </div>
             <div class="footer_copyright">Oles Novikov © 2020 · Privacy Policy</div>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    include 'session.php';
+    $_SESSION['serializedArray'] = $serializedArray;
+?>
 <html lang="be">
     <head>
         <meta charset="utf-8">
@@ -33,7 +37,7 @@
         </header>
 
         <main class="main_container">
-
+            <?php include "visitCount.php"; ?>
             <article class="all_articles">
                 <img id="trinity_image" src="img/Trinity_Suburb.jpg">
                 <div id="trinity_description">
