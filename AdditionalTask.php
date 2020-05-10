@@ -270,8 +270,8 @@
                         if (yearInRange()) {
                             $year = $_POST['input_year'];
                             $host = 'localhost';
-                            $user = 'Oles';
-                            $password = 'Erda_2020';
+                            $user = 'user';
+                            $password = 'password';
                             $dbName = 'minskguide';
 
                             $link = mysqli_connect($host, $user, $password, $dbName);
