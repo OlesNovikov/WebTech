@@ -295,8 +295,8 @@ Lorem Ipsum 123 45 67 is simply dummy text of the printing and 1234567 typesetti
                     use PHPMailer\PHPMailer\SMTP;
                     use PHPMailer\PHPMailer\Exception;
                     
-                    $senderEmail = 'lxnvkv@gmail.com';
-                    $senderPassword = 'WTpass2020';
+                    $senderEmail = 'email@.com';
+                    $senderPassword = 'password';
 
                     if (isset($_POST['send_button'])) {
                         $receiversArray = explode(' ', $_POST['receivers']);
