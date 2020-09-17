@@ -26,7 +26,7 @@
     
         <header class="header_container">
             <div class="top_panel">
-                <div class="top_telephone">Телефон для справок: +375 (33) 381 84 51</div>
+                <div class="top_telephone">Телефон для справок: +123 (89) 123 45 67</div>
             </div>
             <div class="logo_navigation_container">
                 <div>
